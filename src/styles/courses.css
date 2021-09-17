@@ -1,0 +1,57 @@
+@import "./utility.css";
+
+.courses-container {
+  background-color: var(--bg-color-2);
+  font-family: var(--primary-font);
+}
+
+.courses-title {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.courses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  color: var(--primary-color);
+}
+
+.course {
+  width: 60%;
+  margin: 0.8rem;
+}
+
+.course-name {
+  font-size: var(--primary-font-size);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+#courses-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1100px) {
+  .course {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .course {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .course {
+    margin: 0.5rem 1rem;
+  }
+}
